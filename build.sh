@@ -64,7 +64,7 @@ sudo sync
 sudo rm ${mount_point}/SYSTEM
 sudo mv SYSTEM ${mount_point}/SYSTEM
 sudo md5sum ${mount_point}/SYSTEM > SYSTEM.md5
-sudo mv SYSTEM.md5 target/SYSTEM.md5
+sudo mv SYSTEM.md5 ${mount_point}/SYSTEM.md5
 sudo rm -rf ${system_root}
 
 echo "Unmounting CoreELEC boot partition"
